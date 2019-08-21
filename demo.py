@@ -9,17 +9,17 @@ import config
 import utils
 
 if __name__ == "__main__":
-	primary_data = np.genfromtxt('./data/primary_data.txt', names=True)
-	group_A = np.genfromtxt('./data/group_A.txt', names=True)
+	primary_melt_composition = np.genfromtxt('./data/primary_melt_composition.txt', names=True)
+	cpx_melt_P_T = np.genfromtxt('./data/cpx_melt_P_T.txt', names=True)
 
 	trend = []
 	for percent_H2O in np.arange(config.H2O_begin, config.H2O_end, config.H2O_interval):
-		temperature, pressure = utils.cal_t_p(percent_H2O, primary_data)
+		temperature, pressure = utils.cal_t_p(percent_H2O, primary_melt_composition)
 		left = min(temperature) - config.E_B_T
-		right = max(group_A["T"]) + config.E_A_T
+		right = max(cpx_melt_P_T["T"]) + config.E_A_T
 		down = min(pressure) - config.E_B_p
-		up = max(group_A["p"]) + config.E_A_p
-		area = utils.cal_overlap_area(group_A["T"], group_A["p"], temperature, pressure,
+		up = max(cpx_melt_P_T["p"]) + config.E_A_p
+		area = utils.cal_overlap_area(cpx_melt_P_T["T"], cpx_melt_P_T["p"], temperature, pressure,
 									  config.E_A_T, config.E_A_p, config.E_B_T, config.E_B_p,
 									  left, right, down, up)
 		trend.append([percent_H2O, area])
