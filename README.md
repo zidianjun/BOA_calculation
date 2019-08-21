@@ -20,3 +20,5 @@ group A:
 ...
 
 Directly run "python demo.py" to get the results.
+
+When changing the parameters such as the propotion of Fe3+ and the errors of the measurements, simply go to config.py.
