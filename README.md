@@ -18,3 +18,5 @@ group A:
 # T p
 1051.29405	2.04854
 ...
+
+Directly run "python demo.py" to get the results.
