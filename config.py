@@ -4,23 +4,26 @@ proportion_Fe3 = 0.28
 
 
 # error of T and p
-E_A_T = 33
-E_A_p = 1.7
-E_B_T = 36
-E_B_p = 2.0
+E_A_T = 33 # T error of cpx-melt
+E_A_p = 1.7 # p error of cpx-melt
+E_B_T = 36 # T error of primary melt composition
+E_B_p = 2.0 # p error of primary melt composition
 
 
-# mosaic size
-# if range is larger, use 10 times dx and dy, otherwise 4
-
+# size of discretization unit
+# if the range is larger, use 10 times dx and dy, otherwise 4
 d_x = 0.5
 d_y = 0.05
 
 
-#range
+# H2O range
 H2O_begin = 3.6
 H2O_end = 5.5
 H2O_interval = 0.01
+
+# H2O_begin = 0.0
+# H2O_end = 10.0
+# H2O_interval = 0.1
 
 
 # molar mass
