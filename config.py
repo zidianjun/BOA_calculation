@@ -6,8 +6,8 @@ proportion_Fe3 = 0.28
 # error of T and p
 E_A_T = 33 # T error of cpx-melt
 E_A_p = 1.7 # p error of cpx-melt
-E_B_T = 36 # T error of primary melt composition
-E_B_p = 2.0 # p error of primary melt composition
+E_B_T = 36 # T error of Si activity
+E_B_p = 2.0 # p error of Si activity
 
 
 # size of discretization unit
