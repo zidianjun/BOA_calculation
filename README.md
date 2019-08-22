@@ -15,11 +15,10 @@ primary melt composition:
 (The order of the species does not matter, while all the species must be included.)
 
 cpx-melt P-T:
-# T p
+# T/°C   p/kbar
 1051.29405	2.04854
 ...
 
-(the unit of T: °C, the unit of p: kbar)
 
 Directly run "python demo.py" to get the results.
 
