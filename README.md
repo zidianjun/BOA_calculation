@@ -13,7 +13,7 @@ primary melt composition:
 
 ...
 
-(The order of the species does not matter, while all the species must be included.)
+(The order of the species does not matter, while all the species must be included. The input primary melt compositions should be in equlibrium with olivine + orthopyroxene)
 
 cpx-melt P-T:
 # T p
@@ -21,7 +21,7 @@ cpx-melt P-T:
 
 ...
 
-(the unit of T: °C, the unit of p: kbar)
+(the unit of T: °C, the unit of p: kbar. The input P-T should be from equilibrated cpx-melt pairs.)
 
 
 Manual:
