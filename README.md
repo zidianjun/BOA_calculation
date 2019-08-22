@@ -19,6 +19,8 @@ cpx-melt P-T:
 1051.29405	2.04854
 ...
 
+(the unit of T: °C, the unit of p: kbar)
+
 Directly run "python demo.py" to get the results.
 
 When changing the parameters such as the propotion of Fe3+ and the errors of the measurements, simply go to config.py.
