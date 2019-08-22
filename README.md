@@ -1,4 +1,4 @@
-# BOA-of-WEK
+# BOA calculation
 A discretization method of calculating the buffer overlapping area (BOA) of two buffers in P-T space.
 
 Requirements:
