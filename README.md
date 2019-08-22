@@ -15,11 +15,16 @@ primary melt composition:
 (The order of the species does not matter, while all the species must be included.)
 
 cpx-melt P-T:
-# T/°C   p/kbar
+# T p
 1051.29405	2.04854
 ...
+(the unit of T: °C, the unit of p: kbar)
 
 
-Directly run "python demo.py" to get the results.
-
-When changing the parameters such as the propotion of Fe3+ and the errors of the measurements, simply go to config.py.
+Manual:
+1. Click the green button "clone or download" to get the whole repository into a local device.
+2. Make sure Python 2 has been already installed.
+3. Copy and Paste your primary melt composition and cpx-melt data into ./data/primary_melt_composition.txt and ./data/cpx_melt.txt, respectively.
+4. Change the parameters in config.py, e.g. the propotion of Fe3+ and the errors of the measurements. Our default parameters are shown in Di et al. (2019).
+5. Run "python demo.py" to get the outcome.
+6. The outcome is a figure showing a scatter of H2O content (.wt%) and BOA.
