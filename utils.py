@@ -25,7 +25,7 @@ def cal_overlap_area(x1_array, y1_array, x2_array, y2_array,
 						and j < y2_array[n] + yerr2 * np.sqrt(1 - (i - x2_array[n]) ** 2 / xerr2 ** 2)
 						and j > y2_array[n] - yerr2 * np.sqrt(1 - (i - x2_array[n]) ** 2 / xerr2 ** 2)):
 						area_total += d_area
-						flag = 1 # to make sure each mosaic will only be counted once
+						flag = 1 # to make sure each unit will only be counted once
 						break
 				if flag == 1:
 					break
