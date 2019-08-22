@@ -9,9 +9,9 @@ def cal_overlap_area(x1_array, y1_array, x2_array, y2_array,
 					 xerr1, yerr1, xerr2, yerr2,
 					 left, right, down, up):
 	area_total = 0
-	mosaic_coefficient = 10 if config.H2O_end - config.H2O_begin > 5 else 4
-	d_x = config.d_x * mosaic_coefficient
-	d_y = config.d_y * mosaic_coefficient
+	unit_coefficient = 10 if config.H2O_end - config.H2O_begin > 5 else 4
+	d_x = config.d_x * unit_coefficient
+	d_y = config.d_y * unit_coefficient
 	d_area = d_x * d_y
 	for i in np.arange(left, right, d_x):
 		for j in np.arange(down, up, d_y):
