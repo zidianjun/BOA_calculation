@@ -1,5 +1,5 @@
 # BOA calculation
-A discretization method of calculating the buffer overlapping area (BOA) of two buffers in P-T space (Di et al. 2019, American Mineralogist, under review).
+A discretization method of calculating the buffer overlapping area (BOA) of two buffers in P-T space (Di et al. 2019, accepted by American Mineralogist).
 
 Requirements:
 Python 2, numpy and matplotlib
